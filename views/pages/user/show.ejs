@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>User Detail</title>
+      <link rel="stylesheet" href="../../../assets/css/style.css" />
+   </head>
+   <body>
+      <%- include('../../components/navbar')%>
+
+      <a href="/users">Back</a>
+      <h1>User Detail</h1>
+      <ul>
+         <li>Nama : <Strong><%= user.name %> </Strong></li>
+         <li>Email : <Strong><%= user.email %></Strong></li>
+      </ul>
+      <a href="/users/<%= user._id %>/edit">Edit</a>
+      <a href="/users/id">Delete</a>
+      <footer>
+         <p>&copy; 2022 Muhammad Hannan</p>
+      </footer>
+   </body>
+</html>
